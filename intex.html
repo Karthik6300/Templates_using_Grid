@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts_using_Grid_Properties</title>
+    <style>
+      .main1 {
+        border: 2px solid black;
+        display: grid;
+        padding: 5px;
+        gap: 5px;
+        grid-template-areas:
+          "area1 area2 area3"
+          "area4 area6 area6"
+          "area5 area6 area6";
+        grid-template-rows: 75px 75px 75px;
+      }
+      .m1 {
+        grid-area: area1;
+      } 
+      .m2 {
+        grid-area: area2;
+      }
+      .m3 {
+        grid-area: area3;
+      }
+      .m4 {
+        grid-area: area4;
+      }
+      .m5 {
+        grid-area: area5;
+      }
+      .m6 {
+        grid-area: area6;
+      }
+      .main1 div {
+        border: 2px solid black;
+        text-align: center;
+        align-content: center;
+      }
+      .main2 {
+        border: 2px solid black;
+        display: grid;
+        padding: 5px;
+        gap: 5px;
+        grid-template-areas:
+          "area1 area1 area1 area1 area1 area2 area2 area2 area2 area2 area2 area2 area2 area3 area3 area3 area4 area4 area4 area5 area5 area5 area5 area5 area6 "
+          "area7 area7 area7 area7 area7 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area4 area4 area4 area5 area5 area5 area5 area5 area6 "
+          "area7 area7 area7 area7 area7 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area4 area4 area4 area5 area5 area5 area5 area5 area6 ";
+          grid-template-rows: 75px 75px 75px;
+      }
+      .h1{
+        grid-area: area1;
+      }
+      .h2{
+        grid-area: area2;
+      }
+      .h3{
+        grid-area: area3;
+      }
+      .h4{
+        grid-area: area4;
+      }
+      .h5{
+        grid-area: area5;
+      }
+      .h6{
+        grid-area: area6;
+      }
+      .h7{
+        grid-area: area7;
+      }
+      .h8{
+        grid-area: area8;
+      }
+      .main2 div{
+        border: 2px solid black;
+        text-align: center;
+        align-content: center;
+      }
+      .m1, .h2{
+        color: white;
+      }
+      .main3{
+        border: 2px solid black;
+        display: grid;
+        gap: 5px;
+        padding: 5px;
+        grid-template-areas:
+        "area1 area1 area2 area2 area2 area2 area3 area3"
+        "area1 area1 area4 area4 area5 area5 area6 area6"
+        "area1 area1 area7 area7 area8 area8 area6 area6";
+        grid-template-rows: 75px 75px 75px;
+      }
+      .k1{
+        grid-area: area1;
+      }
+      .k2{
+        grid-area: area2;
+      }
+      .k3{
+        grid-area: area3;
+      }
+      .k4{
+        grid-area: area4;
+      }
+      .k5{
+        grid-area: area5;
+      }
+      .k6{
+        grid-area: area6;
+      }
+      .k7{
+        grid-area: area7;
+      }
+      .k8{
+        grid-area: area8;
+      }
+      .main3 div{
+        border: 2px solid black;
+        text-align: center;
+        align-content: center;
+        
+      }
+      .k8{
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div style="background-color: black" class="m1"><h1>1</h1></div>
+      <div style="background-color: blueviolet" class="m2"><h1>2</h1></div>
+      <div style="background-color: brown" class="m3"><h1>3</h1></div>
+      <div style="background-color: chartreuse" class="m4"><h1>4</h1></div>
+      <div style="background-color: chocolate" class="m5"><h1>5</h1></div>
+      <div style="background-color: cyan" class="m6"><h1>6</h1></div>
+    </div>
+    <br>
+    <br>  
+    <div class="main2">
+      <div style="background-color: aqua;" class="h1"><h1>1</h1></div>
+      <div style="background-color: black;" class="h2"><h1>2</h1></div>
+      <div style="background-color: chartreuse;" class="h3"><h1>3</h1></div>
+      <div style="background-color: burlywood;" class="h4"><h1>4</h1></div>
+      <div style="background-color: crimson;" class="h5"><h1>5</h1></div>
+      <div style="background-color: darkblue;" class="h6"><h1>6</h1></div>
+      <div style="background-color: darkgoldenrod;" class="h7"><h1>7</h1></div>
+      <div style="background-color: darkorange;" class="h8"><h1>8</h1></div>
+    </div>
+    <br><br>
+
+    <div class="main3">
+      <div style="background-color: coral;" class="k1"><h1>1</h1></div>
+      <div style="background-color: yellowgreen;" class="k2"><h1>2</h1></div>
+      <div style="background-color: violet;" class="k3"><h1>3</h1></div>
+      <div style="background-color: teal;" class="k4"><h1>4</h1></div>
+      <div style="background-color: tan;" class="k5"><h1>5</h1></div>
+      <div style="background-color: springgreen;" class="k6"><h1>6</h1></div>
+      <div style="background-color: red;" class="k7"><h1>7</h1></div>
+      <div style="background-color: black;" class="k8"><h1>8</h1></div>
+    </div>
+  </body>
+</html>
